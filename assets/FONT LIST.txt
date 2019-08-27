@@ -1,0 +1,38 @@
+Font Families:
+  - Primary: Lato
+  - Secondary: Lato
+
+Topbar: Primary, 12 & 14, Regular and bold
+
+Navbar: Primary, 13, Medium
+
+H1: Secondary, 60, Light
+
+H2: Secondary, 55, Light
+
+H3: Secondary, 40, Light
+
+H4: Secondary, 30, Regular
+
+H5: Secondary, -
+
+H6: Secondary, -
+
+Buttons: Priamry, 15, Bold
+
+Lead Copy: Primary, 18, Regular
+
+Body Copy: Primary, 16, Light
+
+Testimonial Copy: - Primary, 30, Italic
+
+Footer Header: N/A
+
+Footer Copy: Primary, 16, Light
+
+Small Copy: Primary, 12, light
+
+Footer Nav: Primary, 13, Medium
+
+Bottom Footer Copy: Primary, 16, Light
+

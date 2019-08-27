@@ -1,0 +1,54 @@
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* FOOTER 1 SECTION */
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER 2 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer2 {
+  background-color: $color-light;
+  width: 100%;
+  // padding: 0.6rem 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  .footer-2-copy {
+    font-family: $font-primary;
+    font-size: 15px;
+    font-weight: 300;
+    color: $color-dark;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-2-link {
+    @extend .footer-2-copy;
+
+    &:hover {
+      color: $color-light-accent;
+      text-decoration: none;
+    }
+  }
+
+  .containerish {
+    display: grid;
+    grid-template-rows: 1;
+    align-items: center;
+    max-width: 100%;
+
+    .foot-left {
+      display: none;
+    }
+
+    // .foot-middle {}
+
+    .foot-right {
+      display: none;
+    }
+  }
+}
