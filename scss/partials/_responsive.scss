@@ -21,31 +21,49 @@
     display: inline-flex;
     min-width: 220px;
   }
+  .navbar {
+    padding: .5rem;
+  }
 
   /* TOPBAR ***************************************************************** */
   .topbar {
     .containerish {
-      max-width: 100% !important;
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 1fr;
-      padding: 0.2rem 0.5rem;
+      padding: 0.2rem 0;
 
       .col-left {
         grid-row: 1;
         grid-column: 1;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
       }
 
       .col-right {
-        // grid-row: 1;
-        // grid-column: 2;
-        // display: flex;
-        // align-items: center;
-        // justify-content: flex-end;
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
       }
+    }
+  }
+  /* HERO ******************************************************************* */
+  .hero {
+  height: 65vh;
+  .containerish {
+    justify-content: center;
+    .section-info {
+      width: 75%;
+      max-width: 741px;
+    }
+  }
+    .event-ol {
+      right: 0;
+      width: 319px;
+
     }
   }
 }
@@ -60,12 +78,16 @@
     padding: 0.8rem 0.5rem;
     width: 225px;
   }
-
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   /* TOPBAR ***************************************************************** */
   .topbar {
     .containerish {
       grid-template-columns: max-content 1fr max-content;
-      padding: 0.2rem 1rem;
+      // padding: 0.2rem 1rem;
 
       .col-left {
         grid-row: 1;
@@ -84,8 +106,51 @@
       }
     }
   }
+  /* NAVBAR ***************************************************************** */
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .nav-wrapper {
+    background-image: linear-gradient(
+      to right, rgba($color-white, 0), rgba($color-white, .5)
+    );
+    position: relative;
+
+    .container {
+      position: relative;
+
+      .desktop-logo {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        width: 155.6px;
+        height: 167.74px
+      }
+    }
+  }
 
   /* HERO ******************************************************************* */
+  .hero {
+    padding: 0 20px;
+   height: 75vh;
+      &::before {
+        background: rgba($color-dark, 0);
+      }
+    .containerish {
+      height: inherit;
+      justify-content: flex-end;
+      .section-info {
+        width: 50%;
+        max-width: 741px;
+        margin-bottom: 2rem;
+      }
+    }
+    .event-ol {
+      right: 0;
+      width: 319px;
+
+    }
+  }
   /* SEARCH ***************************************************************** */
   .search {
     // background: $color-light;
@@ -163,12 +228,6 @@
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
 
-  /* TOPBAR ******************************************************* */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
 
   /* TOPBAR ******************************************************* */
   .topbar {
@@ -186,19 +245,26 @@
         display: inline-flex;
       }
 
-      padding: 0.2rem 2rem;
+      // padding: 0.2rem 2rem;
     }
   }
 
   /* NAVBAR ***************************************************************** */
-  .dropdown:hover>.dropdown-menu {
-    display: block;
+  .nav-wrapper {
+    .container {
+      .navbar {
+        padding: .5rem 0 !important;
+      }
+    }
+  }
+
+  .nav-item {
+    margin-right: 1.5rem;
   }
 
   /* HERO ******************************************************************* */
   .hero {
     margin-top: 30px;
-    padding: 20px 20px;
 
     &::before {
       background: rgba($color-dark, 0);

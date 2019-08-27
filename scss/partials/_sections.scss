@@ -16,7 +16,70 @@ section {
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
+.hero {
+  background: url('../../img/hero@2x.jpg') center / cover;
+  height: 75vh;
+  padding: 40px 20px;
+  position: relative;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-main, .85);
+  }
+  .containerish {
+    position: relative;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .section-info {
+      width: 100%;
+      max-width: 741px;
+    }
+  }
+    .event-ol {
+      background: rgba($color-dark, .8);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+
+      .event-title {
+        font-family: $font-primary;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+      .event-copy {
+        font-family: $font-primary;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 11px;
+      }
+      .event-btn {
+        color: $color-white;
+        font-family: $font-primary;
+        font-size: 10px;
+        font-weight: 700;
+        border: solid 1px $color-white;
+        padding: .3rem 1rem;
+        transition: all .3s ease-in-out;
+        &:hover {
+          background: rgba($color-main, .5);
+          text-decoration: none;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+}
 
 /* -------------------------------------------------------------------------- */
 /* SEARCH SECTION */
