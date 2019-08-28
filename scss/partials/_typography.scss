@@ -24,6 +24,7 @@ h1 {
   font-size: 3.75rem;
   line-height: 3.75rem;
   font-weight: 300;
+ 
 
   &.is-bold {
     font-weight: 700;
@@ -40,6 +41,7 @@ h2 {
   line-height: 3.4375rem;
   font-weight: 300;
 
+
   &.is-italic {
     font-style: italic;
   }
@@ -50,6 +52,7 @@ h3 {
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-weight: 500;
+
 
   &.is-light {
     font-weight: 300;
@@ -75,6 +78,9 @@ h5 {
 h6 {
   font-family: $font-secondary;
   font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6 {
+    letter-spacing: .25em;
 }
 
 
@@ -146,11 +152,11 @@ input {
 // Font Size Breakpoints
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 300% !important;
+    font-size: 250% !important;
   }
 
   h2 {
-    font-size: 250%;
+    font-size: 200%;
   }
 
   // h1 {

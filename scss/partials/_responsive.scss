@@ -66,37 +66,67 @@
 
     }
   }
-}
-/* ABOUT US ***************************************************************** */
-.aboutus {
-  padding: 40px 40px;
 
-  .containerish {
-    .section-info {
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    .staff-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 6rem;
-      .staff {
+  /* ABOUT US *************************************************************** */
+  .aboutus {
+    padding: 40px 40px;
+
+    .containerish {
+      .section-info {
+        margin-bottom: 2rem;
         text-align: center;
-        img {
-          width: 100%;
-          height: auto;
+      }
+      .staff-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 6rem;
+        .staff {
+          text-align: center;
+          img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+          }
+          .staff-title {
+            font-family: $font-primary;
+            font-size: 15px;
+            color: $color-white;
+            margin-bottom: .5rem;
+          }
+          .staff-info {
+            font-family: $font-primary;
+            font-size: 12px;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  /* BOTOX-FILLERS-HYDRAFACIAL ********************************************** */
+  .botox-fillers-hydrafacial {
+    padding: 60px 20px;
+
+    .botox-fillers {
+      .containerish {
+        grid-gap: 3rem;
+
+        .image-row {
+          grid-column-gap: 1rem;
           margin-bottom: 1rem;
         }
-        .staff-title {
-          font-family: $font-primary;
-          font-size: 15px;
-          color: $color-white;
-          margin-bottom: .5rem;
-        }
-        .staff-info {
-          font-family: $font-primary;
-          font-size: 12px;
-          color: $color-white;
+      }
+    }
+    .hydrafacial {
+      margin-top: 3rem;
+      .containerish {
+        position: relative;
+        .hydrafacial-content {
+          background: url('../../img/hydrafacial-content-bg@2x.jpg') center / cover;
+          padding: 2rem;
+          position: relative;
+          top: -100px;
+          width: 85%;
+          margin: 0 auto;
         }
       }
     }
@@ -326,14 +356,35 @@
     }
   }
 
-  /* BOTOX & FILLERS ******************************************************** */
-  .botox-fillers {
-    padding: 40px 20px;
+  /* BOTOX-FILLERS-HYDRAFACIAL ********************************************** */
+  .botox-fillers-hydrafacial {
+    padding: 80px 20px 0px 20px;
 
-    .containerish {
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: 1fr 1fr;
+    .botox-fillers {
+      .containerish {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+
+        .image-row {
+          grid-column-gap: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .hydrafacial {
+      margin-top: 4rem;
+      .containerish {
+        position: relative;
+        .hydrafacial-content {
+          background: url('../../img/hydrafacial-content-bg@2x.jpg') center / cover;
+          padding: 3rem;
+          position: relative;
+          top: -100px;
+          width: 85%;
+          max-width: 1012px;
+          margin: 0 auto;
+        }
+      }
     }
   }
 
@@ -429,13 +480,35 @@
     }
   }
 
-  /* BOTOX & FILLERS ******************************************************** */
-  .botox-fillers {
-    padding: 80px 20px;
+  /* BOTOX-FILLERS-HYDRAFACIAL ********************************************** */
+  .botox-fillers-hydrafacial {
+    padding: 80px 20px 0px 20px;
 
-    .containerish {
-      display: grid;
-      grid-gap: 2rem;
+    .botox-fillers {
+      .containerish {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 6rem;
+
+        .image-row {
+          grid-column-gap: 1rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .hydrafacial {
+      margin-top: 4rem;
+      .containerish {
+        position: relative;
+        .hydrafacial-content {
+          background: url('../../img/hydrafacial-content-bg@2x.jpg') center / cover;
+          padding: 3rem;
+          position: relative;
+          top: -100px;
+          width: 85%;
+          max-width: 1012px;
+          margin: 0 auto;
+        }
+      }
     }
   }
 

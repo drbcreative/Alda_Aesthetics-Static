@@ -220,41 +220,37 @@ section {
   }
 }
 /* -------------------------------------------------------------------------- */
-/* BOTOX AND FILLERS SECTION */
+/* BOTOX, FILLERS & HYDRAFACIAL SECTION */
 /* -------------------------------------------------------------------------- */
-.botox-fillers {
-  background: url('../../img/botox-bg@2x.jpg') center / cover;
+.botox-fillers-hydrafacial {
   padding: 40px 20px;
+  background: url('../../img/botox-bg@2x.jpg') center / cover;
   img {
     width: 100%;
     height: auto;
   }
-  .img-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  .section-info {
-    // height: 350px;
-    display: flex;
-    flex-direction: column;
+  .botox-fillers {
+    .containerish {
+      display: grid;
+      grid-gap: 1rem;
 
-    .ui-btn-group {
-      justify-self: flex-end;
-    }
-
-    h3 {
-      text-align: center;
-    }
-
-    .body-copy {
-      text-align: left;
+      .image-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+        margin-bottom: 1rem;
+      }
     }
   }
-  .containerish {
-    display: grid;
-    grid-gap: 2rem;
+  .hydrafacial {
+    margin-top: 2rem;
+    .containerish {
+      .hydrafacial-content {
+        background: url('../../img/hydrafacial-content-bg@2x.jpg') center / cover;
+        padding: 1rem;
+        text-align: center;
+      }
+    }
   }
 }
 /* -------------------------------------------------------------------------- */
