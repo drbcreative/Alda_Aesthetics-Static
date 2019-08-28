@@ -67,6 +67,41 @@
     }
   }
 }
+/* ABOUT US ***************************************************************** */
+.aboutus {
+  padding: 40px 40px;
+
+  .containerish {
+    .section-info {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .staff-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 6rem;
+      .staff {
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+        .staff-title {
+          font-family: $font-primary;
+          font-size: 15px;
+          color: $color-white;
+          margin-bottom: .5rem;
+        }
+        .staff-info {
+          font-family: $font-primary;
+          font-size: 12px;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* LARGE BREAKPOINT (Desktops 992px and up) */
@@ -192,7 +227,6 @@
       grid-gap: 2rem;
     }
     .section-info {
-      text-align: center;
 
       img {
         width: 100%;
@@ -200,7 +234,109 @@
       }
     }
   }
-}
+  }
+
+  /* ABOUT US *************************************************************** */
+  .aboutus {
+    padding: 60px 40px 300px 40px;
+
+    .containerish {
+      .section-info {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+      .staff-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 6rem;
+        .staff {
+          text-align: center;
+          img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+          }
+          .staff-title {
+            font-family: $font-primary;
+            font-size: 15px;
+            color: $color-white;
+            margin-bottom: .5rem;
+          }
+          .staff-info {
+            font-family: $font-primary;
+            font-size: 12px;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  /* SLIDESHOW ****************************************************************/
+  .slideshow {
+    min-height: 300px;
+    background: $color-dark;
+    // position: relative;
+
+    #about-us-carousel {
+      display: block;
+      position: relative;
+      top: -240px;
+    }
+
+    @import "db_carousel";
+  }
+  /* NEWSLETTER ************************************************************* */
+  .newsletter {
+    align-items: center;
+
+    .containerish {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 1.5fr 1.5fr min-content;
+      grid-template-rows: auto;
+      grid-gap: .5rem;
+
+      h3 {
+        grid-row: 1;
+        grid-column: 1 / -1;
+      }
+
+      p {
+        margin-top: 0.5rem;
+        grid-row: 2;
+        grid-column: 1 / -1;
+      }
+
+      input {
+        grid-row: 3;
+      }
+
+      input:nth-child(1) {
+        grid-column: 1;
+      }
+
+      input:nth-child(2) {
+        grid-column: 2;
+      }
+
+      button {
+        grid-row: 3;
+        grid-column: 3;
+      }
+    }
+  }
+
+  /* BOTOX & FILLERS ******************************************************** */
+  .botox-fillers {
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
 
   /* REQUEST APPT. ********************************************************** */
   .appointments {
@@ -251,7 +387,6 @@
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
 
-
   /* TOPBAR ******************************************************* */
   .topbar {
 
@@ -291,6 +426,16 @@
 
     &::before {
       background: rgba($color-dark, 0);
+    }
+  }
+
+  /* BOTOX & FILLERS ******************************************************** */
+  .botox-fillers {
+    padding: 80px 20px;
+
+    .containerish {
+      display: grid;
+      grid-gap: 2rem;
     }
   }
 

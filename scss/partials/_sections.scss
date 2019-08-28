@@ -129,7 +129,132 @@ section {
       }
     }
     .section-info {
+      text-align: center;
     }
+    
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* ABOUT US SECTION */
+/* -------------------------------------------------------------------------- */
+.aboutus {
+  background: url('../../img/aboutus-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  .containerish {
+    .section-info {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .staff-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      .staff {
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+        .staff-title {
+          font-family: $font-primary;
+          font-size: 15px;
+          color: $color-white;
+          margin-bottom: .5rem;
+        }
+        .staff-info {
+          font-family: $font-primary;
+          font-size: 12px;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* SLIDESHOW SECTION */
+/* -------------------------------------------------------------------------- */
+.slideshow {
+  min-height: 400px;
+  background: $color-dark;
+  position: relative;
+
+  #about-us-carousel {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* NEWSLETTER SECTION */
+/* -------------------------------------------------------------------------- */
+.newsletter {
+  background: #393D47;
+  min-height: 200px;
+  align-items: center;
+
+  .containerish {
+    padding: 40px 20px;
+    display: grid;
+
+    h3,
+    h2,
+    p {
+      text-align: center;
+    }
+
+    p {
+      margin-top: 0.5rem;
+    }
+
+    .form-control {
+      margin-bottom: 0.5rem;
+      border-radius: 0;
+    }
+
+    .form-control:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* BOTOX AND FILLERS SECTION */
+/* -------------------------------------------------------------------------- */
+.botox-fillers {
+  background: url('../../img/botox-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .img-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .section-info {
+    // height: 350px;
+    display: flex;
+    flex-direction: column;
+
+    .ui-btn-group {
+      justify-self: flex-end;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .body-copy {
+      text-align: left;
+    }
+  }
+  .containerish {
+    display: grid;
+    grid-gap: 2rem;
   }
 }
 /* -------------------------------------------------------------------------- */

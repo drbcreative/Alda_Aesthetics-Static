@@ -92,11 +92,33 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/alyssa-b-img.png": {
+		"ft": 32768,
+		"iS": 53096,
+		"oA": 0,
+		"oAP": "/img/alyssa-b-img.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/alyssa-b-img@2x.png": {
 		"ft": 32768,
 		"iS": 155989,
 		"oA": 0,
 		"oAP": "/img/alyssa-b-img@2x.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/alyssa-d-img.png": {
+		"ft": 32768,
+		"iS": 53096,
+		"oA": 0,
+		"oAP": "/img/alyssa-d-img.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -109,8 +131,8 @@
 		"oA": 0,
 		"oAP": "/img/alyssa-d-img@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
