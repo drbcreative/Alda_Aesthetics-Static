@@ -22,7 +22,7 @@
     min-width: 220px;
   }
   .navbar {
-    padding: .5rem;
+    padding: 1rem .5rem;
   }
 
   /* TOPBAR ***************************************************************** */
@@ -195,7 +195,7 @@
   }
   .nav-wrapper {
     background-image: linear-gradient(
-      to right, rgba($color-white, 0), rgba($color-white, .5)
+      to right, rgba($color-white, 0), rgba($color-white, .9)
     );
     position: relative;
 
@@ -425,49 +425,81 @@
     }
   }
 
+  /* CONSULTATION *********************************************************** */
+  .consultation {
+    padding: 80px 20px;
 
-  /* REQUEST APPT. ********************************************************** */
-  .appointments {
-    background: url("../img/appointments-bg@2x.jpg") center / cover;
-    min-height: 400px;
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .appointment-wrapper {
-      background: rgba($color-white, 0.90);
-      padding: 2rem 8%;
-      max-width: 865px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2rem;
-      grid-row-gap: 1rem;
-
-      .form-copy {
-        grid-row: 1;
-        grid-column: 1 / -1;
-        justify-self: center;
-        text-align: center;
-      }
-
-      .form-control {
-        border-radius: 0;
-      }
-
-      input:not(:last-child) {
-        margin-bottom: 0.5rem;
-      }
-
-      button {
-        grid-row: 5;
-        grid-column: 1 / -1 !important;
-        justify-self: center;
-      }
+    .ui-btn {
+      margin-bottom: 0;
     }
   }
 
-  /* SECTION  *************************************************************** */
+  /* FOOTER ***************************************************************** */
+  .footer-1 {
+  padding: 40px 20px;
+
+  .containerish {
+
+    /* FOOTER-NAV */
+    .footer-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 4rem;
+
+      li {
+        list-style-type: none;
+
+        .footer-nav-link {
+          font-family: $font-primary;
+          font-size: 0.8125rem;
+          font-weight: 500;
+          color: $color-white;
+
+          &:hover {
+            color: $color-dark;
+            text-decoration: none;
+          }
+        }
+
+        &.footer-nav-divider {
+          color: $color-white;
+          opacity: .7;
+        }
+      }
+    }
+  }
+  }
+
+  .footer2 {
+    display: flex;
+    align-items: center;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      .foot-left {
+        grid-row: 1;
+
+        .social-link {
+          color: $color-white;
+
+          &:hover {
+            color: $color-dark;
+            text-decoration: none;
+          }
+        }
+      }
+      .foot-right {
+        grid-row: 1;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -499,7 +531,7 @@
   .nav-wrapper {
     .container {
       .navbar {
-        padding: .5rem 0 !important;
+        padding: 1rem 0 !important;
       }
     }
   }
@@ -546,16 +578,6 @@
           margin: 0 auto;
         }
       }
-    }
-  }
-
-  /* REQUEST APPT. ********************************************************** */
-  .appointments {
-    padding: 12rem 8rem 6rem 8rem;
-
-    .appointment-wrapper {
-      max-width: 860px;
-      margin: 0 auto;
     }
   }
 }
