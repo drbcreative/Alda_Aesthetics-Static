@@ -85,7 +85,7 @@ section {
 /* SEARCH SECTION */
 /* -------------------------------------------------------------------------- */
 .search {
-  background: $color-light;
+  background: $color-white;
   padding: 40px 20px;
 
   .containerish {
@@ -108,6 +108,30 @@ section {
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* COOLSCULPTING SECTION */
+/* -------------------------------------------------------------------------- */
+.coolsculpting {
+  padding: 40px 20px;
+  background: url('../../img/coolsculpting-bg@2x.jpg') center / cover;
+  .containerish {
+    display: flex;
+    flex-direction: column;
+
+    .img-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .section-info {
+    }
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* TESTIMONIAL SECTION */
 /* -------------------------------------------------------------------------- */
