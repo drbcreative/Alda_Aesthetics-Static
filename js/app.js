@@ -124,3 +124,32 @@ window.addEventListener('scroll', () => {
     scrollUp.classList.remove('show');
   }
 });
+
+
+/* special animation */
+const staffWrapper = document.querySelector('.staff-wrapper');
+const aboutUsStaff = document.querySelectorAll('.staff');
+const winHeight = window.innerHeight;
+const hydrafacialContent = document.querySelector('.hydrafacial-content');
+
+window.addEventListener('scroll', () => {
+  if (staffWrapper.getBoundingClientRect().top < winHeight / 1.2) {
+    aboutUsStaff.forEach((staff, i) => {
+      setTimeout(() => {
+        staff.classList.add("show");
+      }, i * 350);
+    });
+  } else {
+    aboutUsStaff.forEach((staff, i) => {
+      setTimeout(() => {
+        staff.classList.remove("show");
+      }, i * 350);
+    });
+  }
+
+  if (hydrafacialContent.getBoundingClientRect().top < winHeight / 1) {
+    hydrafacialContent.classList.add('show');
+  } else {
+    hydrafacialContent.classList.remove('show');
+  }
+});

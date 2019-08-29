@@ -126,9 +126,17 @@
           background: url('../img/hydrafacial-content-bg@2x.jpg') center / cover;
           padding: 2rem;
           position: relative;
-          top: -100px;
+          top: 0;
+          opacity: 0;
           width: 85%;
           margin: 0 auto;
+          transition: all 1s ease;
+
+          &.show {
+            top: -100px;
+            opacity: 1;
+            transition: all 1s ease;
+          }
         }
       }
     }
@@ -149,6 +157,7 @@
     .containerish {
       display: flex;
       justify-content: flex-start;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -407,18 +416,6 @@
     }
     .hydrafacial {
       margin-top: 4rem;
-      .containerish {
-        position: relative;
-        .hydrafacial-content {
-          background: url('../img/hydrafacial-content-bg@2x.jpg') center / cover;
-          padding: 3rem;
-          position: relative;
-          top: -100px;
-          width: 85%;
-          max-width: 1012px;
-          margin: 0 auto;
-        }
-      }
     }
   }
 
@@ -582,18 +579,6 @@
     }
     .hydrafacial {
       margin-top: 4rem;
-      .containerish {
-        position: relative;
-        .hydrafacial-content {
-          background: url('../img/hydrafacial-content-bg@2x.jpg') center / cover;
-          padding: 3rem;
-          position: relative;
-          top: -100px;
-          width: 85%;
-          max-width: 1012px;
-          margin: 0 auto;
-        }
-      }
     }
   }
 }
