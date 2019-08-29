@@ -34,21 +34,17 @@ const navDisplay = (slides, prevButton, nextButton, targetIndex) => {
   if (targetIndex === 0) {
     prevButton.classList.add('is-hidden');
     nextButton.classList.remove('is-hidden');
-    nextButton.src = 'img/next-39-59.svg';
   } else if (targetIndex === slides.length - 1) {
     prevButton.classList.remove('is-hidden');
-    prevButton.src = 'img/prev-39-59.svg';
     nextButton.classList.add('is-hidden');
   } else {
     prevButton.classList.remove('is-hidden');
-    prevButton.src = 'img/prev-18-38.svg';
     nextButton.classList.remove('is-hidden');
-    nextButton.src = 'img/next-60.svg';
   }
 }
 
 // When click left, move slides to the left
-prevButton.addEventListener('click', e => {
+prevButton.addEventListener('click', () => {
   // get current slide
   const
     currentSlide = track.querySelector('.current-slide'),
@@ -63,7 +59,7 @@ prevButton.addEventListener('click', e => {
 });
 
 // When click right, move slides to the right
-nextButton.addEventListener('click', e => {
+nextButton.addEventListener('click', () => {
   // get current slide
   const
     currentSlide = track.querySelector('.current-slide'),
@@ -93,4 +89,38 @@ dotsNav.addEventListener('click', e => {
   updateDot(currentDot, targetDot);
   navDisplay(slides, prevButton, nextButton, targetIndex);
 
+});
+
+/* Menu Background & Scroll Top */
+const navWrapper = document.querySelector('.nav-wrapper'),
+  scrollUp = document.querySelector('.scroll-top'),
+  bigLogo = document.querySelector('.desktop-logo'),
+  navBrand = document.querySelector('.navbar-brand');
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 992) {
+    bigLogo.style.display = "none";
+  } else if (window.innerWidth >= 992 && window.scrollY === 0) {
+    navWrapper.classList.remove('show');
+    navBrand.classList.add('d-lg-none');
+    bigLogo.style.display = "block";
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (window.innerWidth >= 992 && window.scrollY > 100) {
+    scrollUp.classList.add('show');
+    navWrapper.classList.add('show');
+    bigLogo.style.display = "none";
+    navBrand.classList.remove('d-lg-none');
+  } else if (window.innerWidth >= 992 && window.scrollY < 100) {
+    scrollUp.classList.remove('show');
+    navWrapper.classList.remove('show');
+    bigLogo.style.display = "block";
+    navBrand.classList.add('d-lg-none');
+  } else if (window.scrollY > 100) {
+    scrollUp.classList.add('show');
+  } else if (window.scrollY < 100) {
+    scrollUp.classList.remove('show');
+  }
 });

@@ -114,13 +114,14 @@ header {
       left: 0;
       top: 0;
       width: 100px;
+      display: none;
     }
   }
 }
 
 .navbar {
   .nav-logo {
-    max-width: 100px;
+    max-width: 150px;
   }
 }
 

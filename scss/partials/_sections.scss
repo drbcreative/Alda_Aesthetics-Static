@@ -1,6 +1,9 @@
 /* -------------------------------------------------------------------------- */
 /* SECTION STYLES */
 /* -------------------------------------------------------------------------- */
+body {
+  position: relative;
+}
 .containerish {
   width: 100%;
   max-width: 1200px;
@@ -13,11 +16,29 @@ section {
   overflow: hidden;
 }
 
+.scroll-top {
+  width: 64px;
+  height: 41px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999999;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  display: none;
+
+  &.show {
+    display: block;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
 .hero {
-  background: url('../../img/hero@2x.jpg') center / cover;
+  background: url('../img/hero@2x.jpg') center / cover;
   height: 75vh;
   padding: 40px 20px;
   position: relative;
@@ -113,7 +134,7 @@ section {
 /* -------------------------------------------------------------------------- */
 .coolsculpting {
   padding: 40px 20px;
-  background: url('../../img/coolsculpting-bg@2x.jpg') center / cover;
+  background: url('../img/coolsculpting-bg@2x.jpg') center / cover;
   .containerish {
     display: flex;
     flex-direction: column;
@@ -139,7 +160,7 @@ section {
 /* ABOUT US SECTION */
 /* -------------------------------------------------------------------------- */
 .aboutus {
-  background: url('../../img/aboutus-bg@2x.jpg') center / cover;
+  background: url('../img/aboutus-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   .containerish {
@@ -224,7 +245,7 @@ section {
 /* -------------------------------------------------------------------------- */
 .botox-fillers-hydrafacial {
   padding: 40px 20px;
-  background: url('../../img/botox-bg@2x.jpg') center / cover;
+  background: url('../img/botox-bg@2x.jpg') center / cover;
   img {
     width: 100%;
     height: auto;
@@ -246,7 +267,7 @@ section {
     margin-top: 2rem;
     .containerish {
       .hydrafacial-content {
-        background: url('../../img/hydrafacial-content-bg@2x.jpg') center / cover;
+        background: url('../img/hydrafacial-content-bg@2x.jpg') center / cover;
         padding: 1rem;
         text-align: center;
       }
@@ -301,6 +322,40 @@ section {
           text-align: left;
           font-style: italic;
           display: inline-block;
+        }
+
+        .carousel-indicators {
+          position: absolute;
+          right: 0;
+          bottom: -40px;
+          left: 0;
+          z-index: 15;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+          justify-content: flex-start;
+          padding-left: 0;
+          margin-right: 15%;
+          margin-left: 0;
+          list-style: none;
+
+          li {
+            position: relative;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 3px;
+            margin-left: 3px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: rgba(255,255,255,.5);
+
+            &.active {
+              background-color: rgba(255,255,255,1);
+            }
+          }
         }
       }
   }

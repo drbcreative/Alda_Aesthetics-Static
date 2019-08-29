@@ -136,6 +136,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/arrow-left.png": {
+		"ft": 32768,
+		"iS": 815,
+		"oA": 0,
+		"oAP": "/img/arrow-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/arrow-left.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -146,6 +157,28 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/arrow-left@2x.png": {
+		"ft": 32768,
+		"iS": 1861,
+		"oA": 0,
+		"oAP": "/img/arrow-left@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow-right.png": {
+		"ft": 32768,
+		"iS": 824,
+		"oA": 0,
+		"oAP": "/img/arrow-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/arrow-right.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -155,6 +188,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/img/arrow-right@2x.png": {
+		"ft": 32768,
+		"iS": 1895,
+		"oA": 0,
+		"oAP": "/img/arrow-right@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/bikini_girl@2x.png": {
 		"ft": 32768,
@@ -395,6 +439,26 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/logo_horiz.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/logo_horiz.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/scroll_top.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/scroll_top.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/img/slide-1@2x.jpg": {
 		"ft": 16384,

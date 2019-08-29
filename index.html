@@ -12,7 +12,10 @@
   <link rel="stylesheet" href="css/theme.min.css" />
 </head>
 
-<body>
+<body id="top">
+  <a href="#top" class="scroll-top">
+    <img src="img/scroll_top.svg" alt="">
+  </a>
   <header>
     <!-- topbar -->
     <div class="topbar">
@@ -42,11 +45,11 @@
     <!-- navbar -->
     <div class="nav-wrapper">
       <div class="container px-0">
-        <img src="img/logo@2x.png" class="desktop-logo d-none d-lg-block" alt="">
+        <img src="img/logo@2x.png" class="desktop-logo" alt="">
 
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand d-block d-lg-none" href="#">
-            <img src="img/logo@2x.png" class="nav-logo" alt="">
+            <img src="img/logo_horiz.svg" class="nav-logo" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -276,7 +279,7 @@
     <section class="newsletter">
       <form action="" class="containerish">
         <h3 class="color-white is-light">
-          Sign-Up For Our Newsletter
+          SIGN UP FOR OUR NEWSLETTER
         </h3>
         <p class="color-white body-copy">
           Add your name and email address to get the latest news & info from Alda Aesthetics.
@@ -301,7 +304,7 @@
               <img src="img/botox-img-2@2x.jpg" alt="">
             </div>
             <div class="section-info">
-              <h3 class="color-dark text-center">BOTOX</h3>
+              <h3 class="color-dark text-center is-light">BOTOX</h3>
               <p class="body-copy color-dark mt-3 mb-4">
                 Botox, a wrinkle relaxer, is used to prevent, soften and weaken the repetitive muscle movement that
                 causes lines along
@@ -321,7 +324,7 @@
               <img src="img/fillers-img-2@2x.jpg" alt="">
             </div>
             <div class="section-info">
-              <h3 class="color-dark text-center">FILLERS</h3>
+              <h3 class="color-dark text-center is-light">FILLERS</h3>
               <p class="body-copy color-dark mt-3 mb-4">
                 Defying the Law of Gravity, dermal fillers will refresh a sagging or sunken face to refresh your
                 appearance. Made of
@@ -367,13 +370,44 @@
     <section class="testimonial">
       <div class="containerish">
         <div class="section-info">
-          <p class="testimonial-copy">
-            “Alda is by far my favorite spa! The set-up is so cute and trendy. Alyssa is an amazing injector whose work
-            is flawless. She is a great person and truly cares about her patients’ needs. I can’t wait to visit next
-            month.” <span class="testimonial-author">– Nicole</span>
-          </p>
+          <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+              <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="testimonial-copy">
+                  “Alda is by far my favorite spa! The set-up is so cute and trendy. Alyssa is an amazing injector whose
+                  work
+                  is flawless. She is a great person and truly cares about her patients’ needs. I can’t wait to visit
+                  next
+                  month.” <span class="testimonial-author">– Nicole</span>
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p class="testimonial-copy">
+                  “Alda is by far my favorite spa! The set-up is so cute and trendy. Alyssa is an amazing injector whose
+                  work
+                  is flawless. She is a great person and truly cares about her patients’ needs. I can’t wait to visit
+                  next
+                  month.” <span class="testimonial-author">– Nicole</span>
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p class="testimonial-copy">
+                  “Alda is by far my favorite spa! The set-up is so cute and trendy. Alyssa is an amazing injector whose
+                  work
+                  is flawless. She is a great person and truly cares about her patients’ needs. I can’t wait to visit
+                  next
+                  month.” <span class="testimonial-author">– Nicole</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
         </div>
-      </div>
     </section>
     <!-- /testimonial -->
 
@@ -391,7 +425,7 @@
         </div>
       </div>
     </section>
-    <!-- /onsultation -->
+    <!-- /consultation -->
   </main>
 
   <footer>
